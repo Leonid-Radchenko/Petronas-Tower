@@ -4,8 +4,65 @@
 	<meta charset="UTF-8">
 	<title>Petronas Tower</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
+	<main>
+		<div class="main__box">
+			<div class="left__box">
+				<nav>
+					<div class="top__nav">
+						<a href="">Home</a>
+						<a href="">Articles</a>
+						<a href="">Store</a>
+						<a href="">About</a>
+						<a href=""><img src="img/magnifying_glass.png" alt="magnifying_glass"></a>
+					</div>
+				</nav>
+				<div class="about__towers">
+					<p class="note">Embark your journey in the world's tallest twin towers!</p>
+					<h1>Petronas Tower, <br>Kuala Lumpur</h1>
+					<div class="about__tower">
+						<p>The Petronas Towers, or the Petronas Twin Towers, are twin skyscrapers in 
+							Kuala Lumpur, Malaysia. they were the tallest buildings in the world Before 
+							Taipei.</p>
+					</div>
+					<div class="link__button">
+						<a href="" target="_blank">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="right__box">
+				<div class="towers__image">
+					<img id="image" src="img/petronas_tower.png" onClick="imgsrc();">
+					<script language="javascript">
+						var i=0;
+						var image=document.getElementById("image");
+						// Добавте свои картинки через запятую
+						var imgs=new Array('img/petronas_tower.png', 'img/petronas_tower2.png', 'img/petronas_tower3.png', 'img/petronas_tower4.png');
+						function imgsrc() {
+								i++;
+								image.src=imgs[i];
+						}
+					</script>
+					<div class="list__buttons">
+						<div class="left__button">
+							<img id="left__arrow" src="img/left_arrow.png" alt="left_arrow">
+						</div>
+						<div class="right__button">
+							<img id="right__arrow" src="img/right_arrow.png" alt="right_arrow">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+
+
 	
 </body>
 </html>
